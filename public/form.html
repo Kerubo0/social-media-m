@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+   
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title"> Join Waitlist</h1>
+            <form id="contactForm">
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                      <i class="fa-solid fa-user"></i>
+                      <input type="text" placeholder="Name" id="name">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelop"></i>
+                        <input type="email" placeholder="Email" id="email">
+                      </div>
+                </div>
+                <div class="btn-field">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="form.js"></script>
+    
+</body>
+</html>
