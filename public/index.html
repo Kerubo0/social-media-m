@@ -7,59 +7,35 @@
     <script src="https://kit.fontawesome.com/1cec806c4f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="flex" id="header-top">
+  <header>
+    <div class="navbar">
+         <img src="images/Sauti Logo_Artboard 1 2.svg" alt="Sauti's Logo" height="60px">
+        <ul class="links">
+            <li><a href="#"> Digital Workers </a></li>
+            <li><a href="#"> Pricing</a></li>
+            <li><a href="#"> Use Cases </a> </li>
+            <li><a href="#">Resources </a> </li>
+            <li><a href="#">Company</a>   </li>
+        </ul>
+        <a href="#" class="action_btn">Hire Oscar</a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
 
-        <div class = "logo-container">
-          <img src="./images/Sauti Logo_Artboard 1 2.svg" alt="sauti logo" style="height: 60px;">
-        </div>
-    
-          <ul class="nav-links sidebar flex ">
-            <li onclick=hideSidebar()>
-              <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" fill = "#fff" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-              </a>
-            </li>
-            <li>
-              <a  href="Pricing.html">Pricing</a>
-            </li>
-            <li>
-              <a  href="Resources.html">Resources</a>
-            </li>
-            <li>
-              <a  href="About.html">About Us</a>
-            </li>
-            <li>
-              <a  href="ContactUs.html">Contact Us</a>
-            </li>
-          </ul>
-    
-          <ul class="nav-links ">
-            <li class="hideOnMobile">
-              <a href="Pricing.html">Pricing</a>
-            </li>
-            <li class="hideOnMobile">
-              <a href="Resources.html">Resources</a>
-            </li>
-            <li class="hideOnMobile">
-              <a href="About.html">About Us</a>
-            </li>
-            <li class="hideOnMobile">
-              <a href="ContactUs.html">Contact Us</a>
-            </li>
-          </ul>
-        
-          <div class="menu" onclick=showSidebar()>
-            <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" fill = "#808080" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-            </a>
-          </div>
-        </div>
-    
-      </nav>
+    <div class="dropdown_menu ">
+      <li><a href="#"> Digital Workers</a></li>
+      <li><a href="#"> Pricing</a></li>
+      <li><a href="#"> Use Cases</a></li>
+      <li><a href="#">Resources</a></li>
+      <li><a href="#">Company</a></li>
+        <li><a href="#" class="action_btn">Hire Oscar</a></li>
+    </div>
+</header>
 
     <div class="hero">
         <div class="hero-text">
@@ -230,7 +206,7 @@
     
     
           <h3 class="erin">Erin  <br> The Social Media Manager</h3>
-          <p class="descriptor" style="font-size: 26px;"> 
+          <p class="descriptor" > 
            Erin is the brains and heart behind your brand's social media game. She will craft a solid strategy , plan out 
            your posts , and make sure your customers feel heard. From witty captions to thoughtful responses, she keeps the 
            online vibe just right.
@@ -265,7 +241,7 @@
         <div class="footer-wrapper flex">
           <div class="flex column sign-off">
             <img src="images/Sauti Logo_Artboard 1 2.svg" style="height: 60px;" alt="Sauti-logo">
-            <p style="font-size: 18px;">Save upto $150,000 in labour costs by hiring Sauti's Digital workers.</p>
+            <p style="font-size: 17px;">Save upto $150,000 in labour costs by hiring Sauti's Digital workers.</p>
     
             <div class="socials flex">
               <i class="fa-brands fa-facebook" style="color: #FFD43B;"></i>
