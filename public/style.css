@@ -664,16 +664,37 @@ footer {
     }
     .block-text{
       padding: 0px;
+      
     }
     h2{
-      font-size: 26px;
+      font-size: 24px;
       font-weight: 600;
     }
 
     p{
       font-weight: 500;
-      font-size: 24px;
+      font-size: 20px;
      }
    
   }
 
+@media(max-width: 500px){
+  .image-w-icons{
+    width: 300px;
+    height: 300px;
+}
+
+p{
+  font-size: 16px;
+ }
+
+}
+
+@media(max-width: 370px){
+  h2{
+    font-size: 18px;
+  }
+  p{
+    font-size: 14px;
+   }
+}
