@@ -194,7 +194,6 @@ header{
         text-align: center;
         margin: 10px auto;
         max-width: 60%;
-        /*max-width: 32ch;*/
       }
 
       @media (max-width: 1200px){
@@ -204,8 +203,12 @@ header{
       }
 
     h1{
-        font-size: 24px;
+        font-size: 30px;
         font-weight: 500;
+        max-width: 22ch;
+        margin: 10px auto;
+        text-align: center;
+       
     }
 
     h2{

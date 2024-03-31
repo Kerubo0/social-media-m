@@ -29,7 +29,7 @@ backToTopBtn.addEventListener("click", () => {
 const btn = document.getElementById("btn");
 
 btn.addEventListener("click", ()=> {
- window.location.href = "https://social-media-ma.onrender.com/join"
+ window.location.href = "http://localhost:3000/join"
 })
 
 const btnTwo = document.getElementById("btn-2");
