@@ -121,6 +121,31 @@ header{
   scale: 0.95;
 }
 
+/* DROPDOWN */
+
+.dropdown{
+  margin-top:100px ;
+ }
+
+ul li ul.dropdown li {
+  display: block;
+}
+
+ul li ul.dropdown {
+  width: fit-content;
+  background: #212121;
+  position: absolute;
+  z-index: 999;
+  display: none;
+  padding-left: 10px;
+}
+
+ul li:hover ul.dropdown{
+  display: block;
+}
+
+
+
 /* DROPDOWN MENU */
 .dropdown_menu{
   display: none;
@@ -155,10 +180,11 @@ header{
 }
 
 .angle{
- background-color: #3d3d3d;
- border-radius: 15px;
- margin-top: 3px ;
-}
+  background-color: #3d3d3d;
+  border-radius: 15px;
+  margin-top: 3px ;
+  width: 15px;
+ }
 /* RESPONSIVE DESIGN */
 @media(max-width: 992px){
   .navbar .links,
