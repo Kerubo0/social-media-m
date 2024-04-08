@@ -319,7 +319,7 @@ ul li:hover ul.dropdown{
 /* Additional styling for the image to ensure it's responsive and doesn't overflow its container */
 .image-seven {
   max-width: 100%;
-  height: auto;
+  height: 380px;
 }
 
 .hero-block-one{
@@ -339,7 +339,9 @@ ul li:hover ul.dropdown{
 
 .image-two{
   max-width: 100%;
-  height: auto;
+  height: 380px;
+  position: relative;
+  top: 30%;
 }
 
 .hero-block-two{
@@ -360,7 +362,9 @@ ul li:hover ul.dropdown{
 
 .image-three{
   max-width: 100%;
-  height: auto
+  height: 380px;
+  position: relative;
+  top: 50%;
 }
 
 .hero-block-three{
@@ -401,7 +405,7 @@ ul li:hover ul.dropdown{
 
 .image-five{
   max-width: 100%;
-  height: auto
+  height: 400px;
 }
 
 
@@ -422,7 +426,7 @@ ul li:hover ul.dropdown{
 
 .image-six{
   max-width: 100%;
-  height: auto;
+  height: 380px;
 }
     
     .image-w-icons{
@@ -497,7 +501,7 @@ width: 100%;
 }
   
 .rounded-btn-holder {
-    margin-left: auto; 
+    margin-right: 20px ; 
 }
 
 .secondary.rounded {
