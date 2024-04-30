@@ -26,6 +26,18 @@ backToTopBtn.addEventListener("click", () => {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 });
 
+const actionBtn = document.getElementById("action_btn");
+
+actionBtn.addEventListener("click", ()=> {
+ window.location.href = "http://localhost:3000/join"
+})
+
+const actionBtnTwo = document.getElementById("action_btn2");
+
+actionBtnTwo.addEventListener("click", ()=> {
+ window.location.href = "http://localhost:3000/join"
+})
+
 const btn = document.getElementById("btn");
 
 btn.addEventListener("click", ()=> {
