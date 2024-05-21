@@ -11,7 +11,52 @@ toggleBtnIcon.classList  = isOpen
 : 'fa-solid fa-bars'
 }
 
-const backToTopBtn = document.getElementById("backToTopBtn");
+const sLink = document.querySelector(".s_link")
+
+sLink.addEventListener ("click", () => {
+  if (sLink.style.display === "none" || sLink.style.display === "") {
+    sLink.style.display = "block";
+} else {
+  //sLink.style.display = "none";
+}
+})
+
+const root = document.documentElement;
+
+const setDropdownProps = (button, list, deg, ht, opacity) => {
+    //button.querySelector('.dropdown-arrow').style.transform = `rotate(${deg}deg)`;
+    button.querySelector('.angle').style.transform = `rotate(${deg}deg)`;
+    list.style.maxHeight = ht;
+    list.querySelectorAll('.dropdown-list-item').forEach(item => {
+        item.style.opacity = opacity;
+    });
+};
+
+document.querySelectorAll('.dropdown-button').forEach(button => {
+    const list = button.nextElementSibling;
+    
+    const listWrapperSizes = 3.5; // margins, paddings & borders (3.5rem)
+
+    button.addEventListener('mouseenter', () => {
+        const dropdownOpenHeight = `${100 * list.children[0].children.length + listWrapperSizes}rem`;
+        setDropdownProps(button, list, 180, dropdownOpenHeight, 1);
+    });
+
+    button.addEventListener('mouseleave', () => {
+        setDropdownProps(button, list, 0, '0', 0);
+    });
+
+    list.addEventListener('mouseenter', () => {
+        const dropdownOpenHeight = `${100 * list.children[0].children.length + listWrapperSizes}rem`;
+        setDropdownProps(button, list, 180, dropdownOpenHeight, 1);
+    });
+
+    list.addEventListener('mouseleave', () => {
+        setDropdownProps(button, list, 0, '0', 0);
+    });
+});
+
+/*const backToTopBtn = document.getElementById("backToTopBtn");
 
 window.addEventListener("scroll", () => {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -24,7 +69,7 @@ window.addEventListener("scroll", () => {
 backToTopBtn.addEventListener("click", () => {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-});
+}); */
 
 const actionBtn = document.getElementById("action_btn");
 
@@ -69,7 +114,7 @@ btnFive.addEventListener("click", ()=> {
 })
 
 const angleOne = document.getElementById("angle-one")
-var dropdownMenu = document.getElementById('dropdownMenu');
+/*var dropdownMenu = document.getElementById('dropdownMenu');
 
   // Add click event listener to the image
   angleOne.onclick = function() {
@@ -79,7 +124,7 @@ var dropdownMenu = document.getElementById('dropdownMenu');
     } else {
         dropdownMenu.style.display = "none";
     }
-};
+}; */
 
 // Get all elements with the class name 'angle'
 var angleImages = document.querySelectorAll('.angle');
@@ -106,7 +151,7 @@ angleImages.forEach(function(image) {
 
 
 var angleImages = document.querySelectorAll('.angle');
-const angleElem = document.getElementById("expand_less")
+/*const angleElem = document.getElementById("expand_less")
  // Get the dropdown menu
  var dropdownMenu = document.getElementById('dropdownMenu');
 
@@ -117,4 +162,4 @@ const angleElem = document.getElementById("expand_less")
 
     // Show the expand more image
     //angleImages.style.display = "block";
-});
+});  */
