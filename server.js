@@ -1,7 +1,7 @@
 const express = require('express');
 const axios = require('axios');
 const path = require('path');
-const apiKey = process.env.OMNISEND_API_KEY;
+//const apiKey = process.env.OMNISEND_API_KEY;
 
 
 const app = express();
@@ -18,6 +18,8 @@ app.get('/join', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'form.html'));
 });
 
+//OMNISEND_API_KEY  = "6465033e71a2f8c907941509-V87VUiF0l9j0Fnp6DVjFArNlU3WC3WuygPCqZhpfHcbL50YZap"; 
+const apiKey = '660fbceee4ddc6b3ebfc8286-rcEV5E5T5dn4FnVPSaH0FHnCdqq4BV1iUvRQzY01MeoNb9gEYB'
 app.post('/submit', async (req, res) => {
     try {
         const { name, email } = req.body;
