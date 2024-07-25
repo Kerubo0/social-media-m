@@ -14,13 +14,16 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/images', express.static(path.join(__dirname, 'images')));
 
-app.get('/join', (req, res) => {
+/*app.get('/join', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'form.html'));
+}); */
+
+app.get('/public', (req, res) => {
+    res.sendFile(__dirname + '/index.html');
 });
 
-//OMNISEND_API_KEY  = "6465033e71a2f8c907941509-V87VUiF0l9j0Fnp6DVjFArNlU3WC3WuygPCqZhpfHcbL50YZap"; 
-const apiKey = '660fbceee4ddc6b3ebfc8286-rcEV5E5T5dn4FnVPSaH0FHnCdqq4BV1iUvRQzY01MeoNb9gEYB'
-app.post('/submit', async (req, res) => {
+const apiKey = '6465033e71a2f8c907941509-t4xU2dZFtTDbjBheXP70DO7UP1GUUaXWhsX22AaQdWEq1EkUp9';
+app.post('/submit-form', async (req, res) => {
     try {
         const { name, email } = req.body;
 
@@ -36,7 +39,10 @@ app.post('/submit', async (req, res) => {
                 type: 'email',
                 sendWelcomeMessage: true
             }],
-            firstName: name,
+            //firstName: name,
+            'customProperties': {
+                'landingpage': 'Erin'
+              }
             
         };
 

@@ -71,7 +71,7 @@ backToTopBtn.addEventListener("click", () => {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }); */
 
-const actionBtn = document.getElementById("action_btn");
+/* const actionBtn = document.getElementById("action_btn");
 
 actionBtn.addEventListener("click", ()=> {
  window.location.href = "http://localhost:3000/join"
@@ -111,7 +111,17 @@ const btnFive = document.getElementById("btn-5");
 
 btnFive.addEventListener("click", ()=> {
  window.location.href = "http://localhost:3000/join"
-})
+}) */
+
+ const button = document.querySelectorAll(".btn").forEach(button => {
+  button.addEventListener("click", ()=> {
+    document.getElementById("formContainer").style.display = 'flex'
+  })
+ })
+
+ document.querySelector(".form-container .close-btn").addEventListener("click", function() {
+   document.getElementById('formContainer').style.display ='none'
+ })
 
 const angleOne = document.getElementById("angle-one")
 /*var dropdownMenu = document.getElementById('dropdownMenu');
